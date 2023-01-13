@@ -1,0 +1,25 @@
+/* BODY */
+.Bodyes{
+    background-color: rgb(146, 192, 192);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#principal{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#sobre{
+    display: none;
+}
+#expectativas{
+    display: none;
+}
+#Why{
+    display: none;
+}
