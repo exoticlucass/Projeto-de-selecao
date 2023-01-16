@@ -1,25 +1,31 @@
 /* BODY */
-.Bodyes{
+
+#principal{
+    display: grid;
     background-color: rgb(146, 192, 192);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     margin: 0;
-}
-
-#principal{
-    display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20% 20%;
 }
+.Selection{
+    border: 2px solid red;
+    border-radius: 10%;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    height: 20vh;
+    grid-row: 3;
+}
+#why{
+    grid-column: 2;
+}
+#who{
+    grid-column: 3;
+}
+#forWhat{
+    grid-column: 4;
+}
 
-#sobre{
-    display: none;
-}
-#expectativas{
-    display: none;
-}
-#Why{
-    display: none;
-}
