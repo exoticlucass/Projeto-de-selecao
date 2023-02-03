@@ -19,6 +19,8 @@ body{
 }
 #SobreMim{
     display:none;
+    flex-direction: column;
+    justify-content: center;
 }
 #Expectativas{
     display:none;
@@ -30,14 +32,19 @@ body{
     text-align: center;
     font-family: 'Sofia Sans', sans-serif;;
     color: aliceblue;
-    height: 20vh;
+    height: 50vh;
     grid-row: 3;
 }
 #why{
     grid-column: 2;
-    background-image: url("tierlistgundam.png");    
+    background-image: url(./imgs/c88c555f-852f-4436-8d84-3568ad16c80e.jpeg);
+    background-size: cover;
+    background-position-x: center;
 }
+
+
 #who{
+    background-image: url(./imgs/monkey-pb2slow.gif);
     grid-column: 3;
 }
 #Texto-sobreMim{
@@ -46,6 +53,15 @@ body{
     font-family: 'Sofia Sans', sans-serif;;
     color: aliceblue;
 }
+#fotoPerfil{
+    border: 2px white solid;
+    width: 50vh;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+
 #forWhat{
     grid-column: 4;
 }

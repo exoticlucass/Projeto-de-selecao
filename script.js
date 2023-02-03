@@ -14,7 +14,7 @@ function trocar(e){
     }
     if(e.currentTarget == sobreMimEl){
         if(guiaSobreMim.style.display == "none"){
-        guiaSobreMim.style.display = "block";
+        guiaSobreMim.style.display = "flex";
         guiaInicial.style.display = "none";
         }
         else{
