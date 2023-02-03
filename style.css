@@ -40,6 +40,12 @@ body{
 #who{
     grid-column: 3;
 }
+#Texto-sobreMim{
+    margin: 100px;  
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;;
+    color: aliceblue;
+}
 #forWhat{
     grid-column: 4;
 }

@@ -44,3 +44,22 @@ let sobreMimEl = document.querySelector("#who");
 sobreMimEl.addEventListener('click', trocar)
 let expectativasEl = document.querySelector("#forWhat");
 expectativasEl.addEventListener('click', trocar)
+
+// data atual
+function dateDiferencaEmDias(a, b) {
+    let data1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+    let data2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+ 
+    return Math.floor((data2 - data1) / ( 1000 * 60 * 60 * 24) );
+ }
+let atual = new Date();
+let bissexto = new Date("2023/01/26");
+let nasc = new Date("2007/01/26");
+let diasErrados = dateDiferencaEmDias(nasc,bissexto)%365;
+diasDiferenca = dateDiferencaEmDias(nasc,atual);
+diasDiferenca = diasDiferenca-diasErrados;
+
+anos = diasDiferenca/365;
+dias = diasDiferenca%365;
+let textoSobremim = document.querySelector('#Texto-sobreMim');
+textoSobremim.innerHTML = "Meu nome é Lucas de Almeida Rocha tenho "+Math.trunc(anos)+" anos e "+dias+" dias e sou aluno do 2° ano como tecnico em informatica no CEFET-MG. Desde pequeno gosto muito de computação e acabei tendo interesse na área e no curso. Quero aproveitar ao máximo os conhecimentos oferecidos pelo CEFET-MG então continuo a me esforçar bastante nesse segundo ano na instituição."
