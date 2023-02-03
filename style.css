@@ -1,15 +1,27 @@
 /* BODY */
 
-#principal{
-    display: grid;
+body{
+    display: block;
     background-color: rgb(146, 192, 192);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     margin: 0;
+}
+#inicial{
+    display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#porqueMeInscrever{
+    display:none;
+}
+#SobreMim{
+    display:none;
+}
+#Expectativas{
+    display:none;
 }
 .Selection{
     border: 3px solid rgb(4, 22, 24);
@@ -23,6 +35,7 @@
 }
 #why{
     grid-column: 2;
+    background-image: url("tierlistgundam.png");    
 }
 #who{
     grid-column: 3;
