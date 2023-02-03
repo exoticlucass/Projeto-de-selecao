@@ -4,7 +4,7 @@
 function trocar(e){
     if(e.currentTarget == porqueEl){
         if(guiaPorque.style.display == "none"){
-            guiaPorque.style.display = "block";
+            guiaPorque.style.display = "flex";
             guiaInicial.style.display = "none";
             escVoltar.style.display = "block";
         }
@@ -28,7 +28,7 @@ function trocar(e){
     }
     if(e.currentTarget == expectativasEl){
         if(guiaExpectativas.style.display == "none"){
-            guiaExpectativas.style.display = "block";
+            guiaExpectativas.style.display = "flex";
             guiaInicial.style.display = "none";
             escVoltar.style.display = "block";
         }
@@ -91,3 +91,13 @@ bodyEl.addEventListener('keydown', (e) => {
 
 let header = document.querySelector('header');
 header.addEventListener('click', fechaGuia);
+
+// abrir Redes
+let instagram = document.querySelector('#instagram');
+instagram.addEventListener('click', () => open("https://www.instagram.com/exoticlucass/"));
+let github = document.querySelector('#github');
+github.addEventListener('click', (e) => open('https://github.com/exoticlucass'));
+let steam = document.querySelector('#steam');
+steam.addEventListener('click', (e) => open('https://steamcommunity.com/profiles/76561198809490953/'));
+
+let 
