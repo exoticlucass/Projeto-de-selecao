@@ -99,5 +99,3 @@ let github = document.querySelector('#github');
 github.addEventListener('click', (e) => open('https://github.com/exoticlucass'));
 let steam = document.querySelector('#steam');
 steam.addEventListener('click', (e) => open('https://steamcommunity.com/profiles/76561198809490953/'));
-
-let 
