@@ -45,10 +45,19 @@ header:hover{
     font-family: 'Sofia Sans', sans-serif;;
     color: rgb(0, 0, 0);
     height: 50vh;
+    width: 35vh;
     grid-row: 3;
     background-size: cover;
     background-position-x: center;
     background-position-y:center;
+    transition: .3s;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+}
+.Selection:hover{
+    -webkit-filter: none;	
+	filter: none;	
 }
 #why{
     grid-column: 2;
