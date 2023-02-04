@@ -26,6 +26,8 @@ header:hover{
 }
 #porqueMeInscrever{
     display:none;
+    flex-direction: column;
+    justify-content: center;
 }
 #SobreMim{
     display:none;
@@ -38,30 +40,49 @@ header:hover{
 .Selection{
     display:flex;
     flex-direction: column-reverse;
-    border: 3px solid rgb(4, 22, 24);
+    border: 3px solid #0d1117;
     border-radius: 10%;
     margin: 10px 10px 10px 10px;
     text-align: center;
-    font-family: 'Sofia Sans', sans-serif;;
-    color: rgb(0, 0, 0);
+    font-family: 'Sofia Sans', sans-serif;
+    color: #0d1117;
+    cursor: pointer;
     height: 50vh;
     width: 35vh;
     grid-row: 3;
     background-size: cover;
     background-position-x: center;
     background-position-y:center;
-    transition: .3s;
+    transition: all .5s;
     -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	filter: gray;
 }
 .Selection:hover{
+    border: 8px solid white;
+    border-radius: 10%;
     -webkit-filter: none;	
-	filter: none;	
+	filter: none;
 }
+/*Porque candidatar */
 #why{
     grid-column: 2;
     background-image: url(./imgs/c88c555f-852f-4436-8d84-3568ad16c80e.jpeg);
+}
+#textoDeCima{
+    width: 150vh;
+    margin: 50px auto 0px auto;
+}
+#textoDebaixo{
+    width: 150vh;
+    margin: 50px auto 20px auto;
+}
+#python{
+    border:2px #0d1117 solid; 
+    margin: auto;
+    border-radius: 3%;
+    width: 110vh;
+    height: 50vh;
 }
 
 /* Sobre*/
