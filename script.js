@@ -52,6 +52,15 @@ sobreMimEl.addEventListener('click', trocar)
 let expectativasEl = document.querySelector("#forWhat");
 expectativasEl.addEventListener('click', trocar)
 
+// tentar desbugar o sistema de display 
+function displayInicial(){
+    guiaPorque.style.display = "none";
+    guiaInicial.style.display = "grid";
+    escVoltar.style.display = "none";
+    guiaSobreMim.style.display = "none";
+    guiaExpectativas.style.display = "none";
+}
+displayInicial();
 
 // data atual
 function dateDiferencaEmDias(a, b) {
@@ -71,8 +80,6 @@ anos = diasDiferenca/365;
 dias = diasDiferenca%365;
 let textoSobremim = document.querySelector('#Texto-sobreMim');
 textoSobremim.innerHTML = "Meu nome é Lucas de Almeida Rocha tenho "+Math.trunc(anos)+" anos e "+dias+" dias e sou aluno do 2° ano como tecnico em informatica no CEFET-MG. Desde pequeno gosto muito de computação e acabei tendo interesse na área e no curso. Quero aproveitar ao máximo os conhecimentos oferecidos pelo CEFET-MG então continuo a me esforçar bastante nesse segundo ano na instituição."
-
-
 
 // Esc
 function fechaGuia(){
