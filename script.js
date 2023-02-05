@@ -52,6 +52,7 @@ sobreMimEl.addEventListener('click', trocar)
 let expectativasEl = document.querySelector("#forWhat");
 expectativasEl.addEventListener('click', trocar)
 
+// tentar desbugar o sistema de display
 function displayInicial(){
     guiaPorque.style.display = "none";
     guiaInicial.style.display = "grid";
