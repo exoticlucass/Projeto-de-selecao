@@ -52,6 +52,15 @@ sobreMimEl.addEventListener('click', trocar)
 let expectativasEl = document.querySelector("#forWhat");
 expectativasEl.addEventListener('click', trocar)
 
+function displayInicial(){
+    guiaPorque.style.display = "none";
+    guiaInicial.style.display = "grid";
+    escVoltar.style.display = "none";
+    guiaSobreMim.style.display = "none";
+    guiaExpectativas.style.display = "none";
+}
+displayInicial();
+
 // data atual
 function dateDiferencaEmDias(a, b) {
     let data1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
